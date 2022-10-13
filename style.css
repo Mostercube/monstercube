@@ -20,13 +20,13 @@ nav[class*=main-navigation]{
     width: 80px;
 }
 
-ul{
+.nav-list{
     list-style-type:none;
     display:flex;
     justify-content: center;
   
   }
-  ul li{
+ul li {
     display: list-item;
     margin: 0 3px;
   }
@@ -40,7 +40,7 @@ a {
     padding-inline: 3rem;
     text-decoration: none;
     color: rgb(228, 228, 228);
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Kalam', cursive;
     transition: transform .3s;
 }
@@ -62,7 +62,7 @@ a:hover {
     color: rgb(228, 228, 228);
     font-size: 30px;
     font-family: 'Kalam', cursive;
-    padding-right: 15%;
+    padding-right: 10%;
 }
 
 .main {
@@ -72,12 +72,58 @@ a:hover {
     margin: 10% 10% 0% 10%;
 }
 
+.pic1 {
+    width: 400px;
+}
+
+
+@media (max-width: 1000px) {
+.text {
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    padding-right: 10%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 10% 0% 10%;
+    flex-direction: column
+}
+.pic1 {
+    width: 300px;
+    margin-top: 30%;
+}
+}
+
+
 @media (max-width: 800px) {
 a {
     padding-inline: 1rem;
-    font-size: 16px;
+    font-size: 20px;
 }
 .logo {
     width: 50px;
+}
+.nav-list {
+    padding-left: 0%;
+  }
+ul li {
+    display: list-item;
+    margin: 2px;
+}
+}
+
+
+@media (max-width: 420px) {
+ul li {
+    display: list-item;
+    margin: 0px;
+}
+a {
+    padding-inline: 8px;
+    font-size: 14px;
 }
 }
